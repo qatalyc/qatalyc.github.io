@@ -128,8 +128,8 @@ jQuery(document).ready(function($) {
 	var siteCarousel = function () {
 		if ( $('.nonloop-block-13').length > 0 ) {
 			$('.nonloop-block-13').owlCarousel({
-		    center: true,
-        items: 2,
+		    center: false,
+        items: 1,
 		    loop: true,
 				stagePadding: 0,
 		    margin: 0,
