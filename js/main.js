@@ -130,7 +130,7 @@ jQuery(document).ready(function($) {
 			$('.nonloop-block-13').owlCarousel({
 		    center: false,
         items: 1,
-		    loop: true,
+		    loop: false,
 				stagePadding: 0,
 		    margin: 0,
 		    autoplay: true,
@@ -158,7 +158,6 @@ jQuery(document).ready(function($) {
 		    }
 			});
 		}
-
 
 		if ( $('.nonloop-block-14').length > 0 ) {
 			$('.nonloop-block-14').owlCarousel({
@@ -204,6 +203,8 @@ jQuery(document).ready(function($) {
 	    nav: true,
 	    navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']
 	  });
+
+    $.fancybox.defaults.loop = true;
 
 	  $('.slide-one-item-alt').owlCarousel({
 	    center: false,
