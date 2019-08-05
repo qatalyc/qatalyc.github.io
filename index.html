@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
@@ -389,6 +388,14 @@
             </div>
 
             <div class="form-group row">
+              <div class="col-md-12">
+                <input class="form-control" type="tel" name="phone_number" value="" placeholder="Phone Number">
+              </div>
+            </div>
+
+            <p>File Description</p>
+
+            <div class="form-group row">
               <div class="col-md-4">
                 <input type="number" class="form-control" name="X" placeholder="X" required>
               </div>
@@ -402,12 +409,7 @@
 
             <div class="form-group row">
               <div class="col-md-6">
-                <div class="g-recaptcha" data-sitekey="6LcLcbEUAAAAANekLIWxhpBRiEdW-ov7W5XCdBE8" data-callback="correctCaptcha"></div>
-              </div>
-            </div>
-            <div class="form-group row">
-              <div class="col-md-6">
-                <input type="submit" class="btn btn-primary py-3 px-5 btn-block send_message" value="Send Message" disabled>
+                <input type="submit" class="btn btn-primary py-3 px-5 btn-block send_message" value="Send Message">
               </div>
             </div>
 
@@ -505,16 +507,6 @@
           s.src = 'https://call.chatra.io/chatra.js';
           if (d.head) d.head.appendChild(s);
       })(document, window, 'Chatra');
-  </script>
-  <script type="text/javascript">
-    function correctCaptcha(response){
-      if(response.length == 0){
-        alert("Are you human?");
-      }
-      else{
-        document.getElementById("#submit_form").disabled = false;
-      }
-    }
   </script>
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN1yLbw2SDfCYh4HfQVdt9yl9qRezm5Pw&callback=initMap">
