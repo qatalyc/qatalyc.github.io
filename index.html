@@ -402,10 +402,12 @@
 
             <div class="form-group row">
               <div class="col-md-6">
-                <input type="submit" class="btn btn-primary py-3 px-5 btn-block send_message" value="Send Message">
-              </div>
-              <div class="col-md-6">
                 <div class="g-recaptcha" data-sitekey="6LcLcbEUAAAAANekLIWxhpBRiEdW-ov7W5XCdBE8"></div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-6">
+                <input type="submit" class="btn btn-primary py-3 px-5 btn-block send_message" value="Send Message" disabled>
               </div>
             </div>
 
@@ -505,39 +507,13 @@
       })(document, window, 'Chatra');
   </script>
   <script type="text/javascript">
-  $(function () {
-      window.verifyRecaptchaCallback = function (response) {
-          $('input[data-recaptcha]').val(response).trigger('change')
-      }
-      window.expiredRecaptchaCallback = function () {
-          $('input[data-recaptcha]').val("").trigger('change')
-      }
-      $('#contact-form').validator();
-
-      $('#contact-form').on('submit', function (e) {
-          if (!e.isDefaultPrevented()) {
-              var url = "contact.php";
-
-              $.ajax({
-                  type: "POST",
-                  url: url,
-                  data: $(this).serialize(),
-                  success: function (data) {
-                      var messageAlert = 'alert-' + data.type;
-                      var messageText = data.message;
-
-                      var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                      if (messageAlert && messageText) {
-                          $('#contact-form').find('.messages').html(alertBox);
-                          $('#contact-form')[0].reset();
-                          grecaptcha.reset();
-                      }
-                  }
-              });
-              return false;
-          }
-      })
-    });
+    var response = grecaptcha.getResponse();
+    if(response.length == 0){
+      alert("Are you human?");
+    }
+    else{
+      document.getElementById("#submit_form").disabled = false;
+    }
   </script>
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN1yLbw2SDfCYh4HfQVdt9yl9qRezm5Pw&callback=initMap">
