@@ -578,15 +578,16 @@ header {
 }
 #colorlib-about{
   background-color: #012D20;
-  height: 100vh;
+  height: 100%;
 }
 
 #video {
   position:relative;
   display: block;
   margin: auto;
+  margin-top: -10%;
   width: auto;
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
   max-height: 50%;
   background-size: cover;
