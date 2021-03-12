@@ -582,10 +582,7 @@ header {
 }
 
 #video {
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 40%;
-  left: 50%;
+  position:relative;
   display: block;
   margin: auto;
   width: auto;
