@@ -580,6 +580,21 @@ header {
   background-color: #012D20;
   height: 100vh;
 }
+
+#video {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  display: block;
+  margin: auto;
+  width: auto;
+  max-width: 50%;
+  height: auto;
+  max-height: 50%;
+  background-size: cover;
+}
+
 #colorlib-intro{
   font-weight: bold;
   background-image: url("images/bg.jpg") !important;
