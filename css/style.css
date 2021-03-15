@@ -83,6 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #b7c2c2; }
 
 #colorlib-page {
+  overflow-x: hidden;
   position: relative;
   -webkit-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -moz-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -125,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 .solutions_heading_div{
   height:100%;
   position: absolute;
-  right:70%;
+  right:75%;
 }
 
 .road_heading_div{
@@ -569,6 +570,14 @@ header {
     margin-left: 5%;
   }
 }
+
+.logo_gif{
+  margin-top: -10%;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
 #colorlib-content{
   height: 20%;
   background-color: #012D20 !important;
@@ -578,7 +587,7 @@ header {
 }
 #colorlib-about{
   background-color: #012D20;
-  height: 100vh;
+  height: 100%;
 }
 
 #video {
@@ -662,17 +671,19 @@ header {
 }
 #colorlib-about-us .background_image{
   position: absolute;
-  height: 330px;
-  width: 330px;
+  height: 400px;
+  width: 400px;
   opacity: 0.5;
-  right: 5%;
+  right:-2%;
+  top:15%;
 }
 .background_image{
   position: absolute;
-  height: 500px;
-  width: 500px;
-  right:0;
-  top: 60%;
+  height: 600px;
+  width: 600px;
+  right:-2%;
+  opacity: 0.3;
+  top: 70%;
 }
 .box{
   background: white;
@@ -771,6 +782,7 @@ header {
   font-family: 'Brygada 1918', serif;
   text-align: right;
   font-size: 90px;
+  line-height: 60%;
   color: #012D20;
   font-weight: 700; }
   @media screen and (max-width: 768px) {
@@ -854,20 +866,24 @@ header {
   font-weight: bold;
 }
 .our{
+  position: absolute;
+  left:3%;
+  top:0;
   font-size: 100px;
   color: #FAFAF6;
   font-family: 'Brygada 1918', serif;
 }
 .work{
-  position: relative;
-  margin-left:73%;
+  position: absolute;
+  top:63%;
+  left:79%;
   font-size: 100px;
   color:#FAFAF6;
   font-family: 'Brygada 1918', serif;
 }
 .see_more{
   position: relative;
-  margin-top:-70%;
+  margin-top:-50%;
   margin-left:102%;
   background: #FAFAF6;
   color: #012D20;

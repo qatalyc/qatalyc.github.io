@@ -42,15 +42,15 @@
 	<div id="colorlib-about">
 		<div class="container">
 			<div class="row text-center">
-				<img src="images/logo_main.svg" class="animate-box"/>
+				<img src="logo_bg.gif" class="logo_gif" object-fit="cover">
 			</div>
 			<div class="row">
-				<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+				<div class="col-md-12 col-md-offset-0 text-center intro-heading" style="visibility:hidden; margin-top:-20%;">
 					<span></span>
 					<h2 style="color:#FAFAF6">3D Printing & Rapid Prototyping</h2>
 					<hr>
 
-					<a href="#expertise"><input type="button" value="Learn More" class="btn btn-primary btn-home"></a>
+					<a href="#solutions"><input type="button" value="Learn More" class="btn btn-primary btn-home"></a>
 
 				</div>
 			</div>
@@ -354,15 +354,15 @@
 							</div>
 						</div>
 						<div class="col-md-2">
-							<div class=" applications_content">
-								<strong><i class="fa fa-cogs" aria-hidden="true" style="font-size:2em;"></i></strong><br>
-								3D Printing / Rapid Prototyping
-							</div>
-						</div>
-						<div class="col-md-2">
 							<div class="applications_content">
 								<strong><i class="fa fa-plug" aria-hidden="true" style="font-size:2em;"></i></strong><br><br>
 								Electrical & White Goods
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class=" applications_content">
+								<strong><i class="fa fa-paint-brush" aria-hidden="true" style="font-size:2em;"></i></strong><br><br>
+								Art & Fashion
 							</div>
 						</div>
 						<div class="col-md-1">
@@ -376,15 +376,15 @@
 	<span id="work"></span>
 	<div id="colorlib-services" style="padding:0!important">
 			<div class="container" style="position:relative;">
-				<div class='our'><strong>O</strong>UR</div>
-				<div class="row text-center">
+				<div class='our'><strong>o</strong>ur</div>
+				<div class="row text-center" style="margin-top:11%;margin-bottom:5%;">
 					<div class="col-md-4">
 						<div class="article">
 							<a class="blog-img">
-								<img class="img-responsive" src="images/work/Acrylic CNC Machining- Clear & Diffused.jpeg" style="width:100%;">
+								<img class="img-responsive" src="images/work/Transparent Optics- Vacuum Casting.jpeg" style="width:100%;">
 								<div class="overlay"></div>
 								<div class="link">
-									<span class="read">Acrylic <br> CNC <br>Machining</h2>
+									<span class="read">Transparent<br>Optics</span>
 								</div>
 							</a>
 						</div>
@@ -392,10 +392,10 @@
 					<div class="col-md-4">
 						<div class="article">
 							<a class="blog-img">
-								<img class="img-responsive" src="images/work/Heat, Sink Aluminium CNC Machining.jpeg" style="width:100%;">
+								<img class="img-responsive" src="images/work/SLS Miniature.jpeg" style="width:100%;">
 								<div class="overlay"></div>
 								<div class="link">
-									<span class="read">Aluminium <br>CNC <br> Machining</h2>
+									<span class="read">SLS Miniature</span>
 								</div>
 							</a>
 						</div>
@@ -403,16 +403,16 @@
 					<div class="col-md-4">
 						<div class="article">
 							<a class="blog-img">
-								<img class="img-responsive" src="images/work/Rubber & Plastic Vacuum Casting.jpeg" style="width:100%;">
+								<img class="img-responsive" src="images/work/Vacuum Casting.jpeg" style="width:100%;">
 								<div class="overlay"></div>
 								<div class="link">
-									<span class="read">Rubber & Plastic <br> Vacuum Casting</h2>
+									<span class="read">Vacuum<br>Casting</span>
 								</div>
 							</a>
 						</div>
 					</div>
 				</div>
-				<div class="work"><strong>W</strong>ORK</div>
+				<div class="work"><strong>w</strong>ork</div>
 				<a href="work.html">
 					<input type="button" class="btn see_more" value="See More">
 				</a>
@@ -424,10 +424,10 @@
 		<img src="images/logo_1.svg" class="background_image" alt="">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3 padding-0">
+					<div class="col-md-3 padding-0" style="margin-top:1.7em;">
 						<h3 class="about_us">about us</h3>
 					</div>
-					<div class="col-md-9" style="margin-top:1em;">
+					<div class="col-md-9">
 						<p style="text-align:justify;font-size:16px;color:#012D20;">
 							A professional hub offering <strong>3D printing</strong> and <strong>prototyping</strong> solutions, Qatalyc stands for
 							evolution, innovation and speed. We provide fast and cost-effective products using state of
@@ -514,7 +514,7 @@
 					<div class="col-md-3 col-pb-sm" style="color:#FAFAF6">
 						<h2>Address</h2>
 						<p>
-							543, Tower A, ITech Park, Sohna Road, Sector 49, Gurugram, Haryana- 122018
+							543, Tower A, IT Tech Park, Sohna Road, Sector 49, Gurugram, Haryana- 122018
 						</p>
 					</div>
 				</div>
@@ -544,6 +544,13 @@
 	<script src="js/magnific-popup-options.js"></script>
 
 	<!-- Main JS (Do not remove) -->
+	<script>
+	function animateHeading() {
+		$('.intro-heading').css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0}, 700);
+	}
+	setTimeout(function() { animateHeading(); }, 5000);
+	</script>
+
 	<script src="js/main.js"></script>
 
 	<div id="slaModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="slaModalLabel" aria-hidden="true">
@@ -688,7 +695,7 @@
 					<h4 class="modal-title">CAD Feasibility</h4>
 				</div>
 				<div class="modal-body">
-					<p>Have a CAD file but unsure if its viable or not? Don’t worry as our team of
+					<p>Have a CAD file but unsure if it's viable or not? Don’t worry as our team of
 					skilled engineers get their hands at it and not only check the feasibility but also correct the
 					errors for you.</p>
 				</div>
