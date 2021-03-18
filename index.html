@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Qatalyc</title>
-	<meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+	<meta name="viewport" content="width=device-width,initial-scale=0.5">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -36,13 +36,29 @@
 	<![endif]-->
 
 	</head>
+	<style type="text/css">
+    #warning-message {
+			display: none;
+			padding: 10%;
+			font-weight: bold;
+		}
+    @media only screen and (orientation:portrait){
+        #wrapper { display:none; }
+        #warning-message { display:block; }
+    }
+    @media only screen and (orientation:landscape){
+        #warning-message { display:none; }
+    }
+</style>
 	<body>
 <span id="home"></span>
 <div id="colorlib-page">
 	<div id="colorlib-about">
 		<div class="container">
 			<div class="row text-center">
-				<img src="logo_bg.gif" class="logo_gif" object-fit="cover">
+				<video autoplay muted id="video">
+				  <source src="QATALYC green bg.mp4" type="video/mp4">
+				</video>
 			</div>
 			<div class="row">
 				<div class="col-md-12 col-md-offset-0 text-center intro-heading" style="visibility:hidden; margin-top:-20%;">
@@ -59,280 +75,285 @@
 			</div>
 		</div>
 	</div>
-	<span id="solutions"></span>
-	<div id="colorlib-intro" style="background-image: url('images/bg.jpg')!important;">
-		<nav class="navbar">
-			<div class="container-fluid">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#about">About Us</a></li>
-					<li><a>|</a></li>
-					<li><a href="#work">Work</a></li>
-					<li><a>|</a></li>
-					<li><a href="#footer">Contact</a></li>
-					<li><a href="#"></a></li>
-				</ul>
-			</div>
-		</nav>
-		<br>
-		<div class="container" style="position:relative;">
-			<div class="row">
-				<div class="col-md-2">
+	<div id="warning-message">
+    <h2>This website is only viewable in landscape mode</h2>
+	</div>
+	<div id="wrapper">
+		<span id="solutions"></span>
+		<div id="colorlib-intro" style="background-image: url('images/bg.jpg')!important;">
+			<nav class="navbar">
+				<div class="container-fluid">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#about">About Us</a></li>
+						<li><a>|</a></li>
+						<li><a href="#work">Work</a></li>
+						<li><a>|</a></li>
+						<li><a href="#footer">Contact</a></li>
+						<li><a href="#"></a></li>
+					</ul>
 				</div>
-				<div class="col-md-4">
-					<h2>
-						<span style="text-decoration:overline;">Additive</span> <br>Manufacturing<br><br>
-						<input type="button" class="btn btn-primary" data-toggle="modal" data-target="#additiveModal" value="Learn More" style="align:center;"/>
-					</h2>
-				</div>
-				<div class="col-md-1">
-
-				</div>
-				<div class="col-md-4">
-					<h2><span style="text-decoration:overline;">CAD</span> <br> feasibility</h2>
-					<input type="button" class="btn btn-primary" data-toggle="modal" data-target="#cadFeasibilityModal" value="Learn More" style="align:center;"/>
-				</div>
-				<div class="col-md-1">
-
-				</div>
-
-			</div>
+			</nav>
 			<br>
-			<div class="row">
-				<div class="col-md-2">
-
-				</div>
-				<div class="col-md-4">
-					<h2><span style="text-decoration:overline;">Reverse</span> <br> Engineering</h2>
-					<input type="button" class="btn btn-primary" data-toggle="modal" data-target="#reverseEnggineeringModal" value="Learn More" style="align:center;"/>
-				</div>
-				<div class="col-md-1">
-
-				</div>
-				<div class="col-md-4">
-					<h2><span style="text-decoration:overline;">Design</span> <br> Consultation</h2>
-					<input type="button" class="btn btn-primary" data-toggle="modal" data-target="#designConsultationModal" value="Learn More" style="align:center;"/>
-				</div>
-				<div class="col-md-1">
-
-				</div>
-			</div>
-		</div>
-		<div class="solutions_heading_div">
-			<h2 class="solutions_heading" style="color:#FAFAF6"><strong>Solutions</strong></h2>
-		</div>
-	</div>
-
-	<span id="expertise"></span>
-	<div id="colorlib-blog">
-		<div class="container" style="position:relative;">
-			<div class="row" style="padding:5px;">
-				<div class="owl-carousel1">
-					<div class="item">
-						<div class="col-md-12">
-							<div class="article">
-								<a data-toggle="modal" data-target="#slaModal" class="blog-img">
-									<img class="img-responsive" src="images/SLA.jpeg">
-									<div class="overlay"></div>
-									<div class="link">
-										<span class="read">Read more</h2>
-									</div>
-								</a>
-								<div class="desc">
-									<span class="meta">SLA</span>
-								</div>
-							</div>
-						</div>
+			<div class="container" style="position:relative;">
+				<div class="row">
+					<div class="col-md-2">
 					</div>
-					<div class="item" style="margin-top:5%;">
-						<div class="col-md-12">
-							<div class="article">
-								<a data-toggle="modal" data-target="#slsModal" class="blog-img">
-									<img class="img-responsive" src="images/sls.jpg" alt="html5 bootstrap by colorlib.com">
-									<div class="overlay"></div>
-									<div class="link">
-										<span class="read">Read more</h2>
-									</div>
-								</a>
-								<div class="desc">
-									<span class="meta">SLS</span>
-								</div>
-							</div>
-						</div>
+					<div class="col-md-4">
+						<h2>
+							<span style="text-decoration:overline;">Additive</span> <br>Manufacturing<br><br>
+							<input type="button" class="btn btn-primary" data-toggle="modal" data-target="#additiveModal" value="Learn More" style="align:center;"/>
+						</h2>
 					</div>
-					<div class="item" style="margin-top:10%;">
-				    <div class="col-md-12">
-				      <div class="article">
-				        <a data-toggle="modal" data-target="#vcModal" class="blog-img">
-				          <img class="img-responsive" src="images/vc.jpg" alt="html5 bootstrap by colorlib.com">
-				          <div class="overlay"></div>
-				          <div class="link">
-				            <span class="read">Read more</h2>
-				          </div>
-				        </a>
-				        <div class="desc">
-				          <span class="meta">Vacuum Casting</span>
-				        </div>
-				      </div>
-				    </div>
-					</div>
-					<div class="item">
-						<div class="col-md-12">
-							<div class="article">
-								<a data-toggle="modal" data-target="#frpModal" class="blog-img">
-									<img class="img-responsive" src="images/frp.jpg" alt="html5 bootstrap by colorlib.com">
-									<div class="overlay"></div>
-									<div class="link">
-										<span class="read">Read more</h2>
-									</div>
-								</a>
-								<div class="desc">
-									<span class="meta">Fiber-Reinforced Plastics</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item" style="margin-top:5%;">
-						<div class="col-md-12">
-							<div class="article">
-								<a data-toggle="modal" data-target="#stModal" class="blog-img">
-									<img class="img-responsive" src="images/soft_tooling.jpg" alt="html5 bootstrap by colorlib.com">
-									<div class="overlay"></div>
-									<div class="link">
-										<span class="read">Read more</h2>
-									</div>
-								</a>
-								<div class="desc">
-									<span class="meta">Soft Tooling</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item" style="margin-top:10%;">
-						<div class="col-md-12">
-							<div class="article">
-								<a data-toggle="modal" data-target="#cncModal" class="blog-img">
-									<img class="img-responsive" src="images/cnc.jpg" alt="html5 bootstrap by colorlib.com">
-									<div class="overlay"></div>
-									<div class="link">
-										<span class="read">Read more</h2>
-									</div>
-								</a>
-								<div class="desc">
-									<span class="meta">CNC</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-
-				</div>
-				<div class="col-md-6 expertise_heading_div">
-					<h2 class="expertise_heading" style="color:#FAFAF6"><strong>Expertise</strong></h2>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="colorlib-services" style="background:#FAFAF6!important;">
-		<div class="container" style="position:relative;">
-			<div class="row">
-				<div class="col-md-6 road_heading_div">
-					<h2 class="road_heading"><strong>Road</strong></h2>
-				</div>
-				<div class="col-md-6">
-
-				</div>
-			</div>
-			<div class="row" style="padding:5px;">
-				<div class="col-md-3" style="margin-top:-5%;">
-					<div class="services animate-box">
-						<div class="content">
-							<ul style="margin-top:7%">
-								<li>CAD file received from the client</li>
-								<li>Data Analysis/Feasibility Check</li>
-								<li>Process Selection</li>
-								<li>Material Selection</li>
-							</ul>
-						</div>
-						<div class="desc" style="display:flex;align-items:center;justify-content:center;">
-							<div class="meta">
-								<h3>Planning <i class="fa fa-pencil-square-o" aria-hidden="true" style="font-size:1.7em;"></i></h3>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3" style="margin-top:5%;">
-					<div class="services animate-box">
-						<div class="content">
-							<ul>
-								<li>Part Orientation</li>
-								<li>Machine Calibration</li>
-								<li>Build Preparation</li>
-								<li>Post Processing</li>
-							</ul>
-						</div>
-						<div class="desc">
-							<div class="meta">
-								<h3>Execution <br> <i class="fa fa-cogs" aria-hidden="true" style="font-size:1.7em;"></i></h3>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3" style="margin-top:-5%;">
-					<div class="services animate-box">
-						<div class="content">
-							<ul>
-								<li>Component Accuracy Testing</li>
-							</ul>
-						</div>
-						<div class="desc">
-							<div class="meta">
-								<h3>Quality Check <br> &nbsp; <i class="fa fa-check-square-o" aria-hidden="true" style="font-size:1.5em;"></i></h3>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3" style="margin-top:5%;">
-					<div class="services animate-box">
-						<div class="content">
-							<ul>
-								<li>Packaging & Delivery</li>
-								<li>Feedback</li>
-							</ul>
-						</div>
-						<div class="desc">
-							<div class="meta">
-								<h3>Dispatch <br><i class="fa fa-truck" aria-hidden="true" style="font-size:1.7em;"></i> </h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-
-				</div>
-				<div class="col-md-6 map_heading_div">
-					<h2 class="map_heading"><strong>Map</strong></h2>
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-	<div id="colorlib-applications" style="background-image:url('images/app.jpg')">
-		<div class="container applications_container">
-			<div class="row text-center">
-				<div class="col-md-12">
-					<h2 class="application_heading">Applications</h2>
-				</div>
-			</div>
-			<div class="row text-center">
-				<div class="row text-center">
 					<div class="col-md-1">
+
+					</div>
+					<div class="col-md-4">
+						<h2><span style="text-decoration:overline;">CAD</span> <br> feasibility</h2>
+						<input type="button" class="btn btn-primary" data-toggle="modal" data-target="#cadFeasibilityModal" value="Learn More" style="align:center;"/>
+					</div>
+					<div class="col-md-1">
+
+					</div>
+
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-2">
+
+					</div>
+					<div class="col-md-4">
+						<h2><span style="text-decoration:overline;">Reverse</span> <br> Engineering</h2>
+						<input type="button" class="btn btn-primary" data-toggle="modal" data-target="#reverseEnggineeringModal" value="Learn More" style="align:center;"/>
+					</div>
+					<div class="col-md-1">
+
+					</div>
+					<div class="col-md-4">
+						<h2><span style="text-decoration:overline;">Design</span> <br> Consultation</h2>
+						<input type="button" class="btn btn-primary" data-toggle="modal" data-target="#designConsultationModal" value="Learn More" style="align:center;"/>
+					</div>
+					<div class="col-md-1">
+
+					</div>
+				</div>
+			</div>
+			<div class="solutions_heading_div">
+				<h2 class="solutions_heading" style="color:#FAFAF6"><strong>Solutions</strong></h2>
+			</div>
+		</div>
+
+		<span id="expertise"></span>
+		<div id="colorlib-blog">
+			<div class="container" style="position:relative;">
+				<div class="row" style="padding:5px;">
+					<div class="owl-carousel1">
+						<div class="item">
+							<div class="col-md-12">
+								<div class="article">
+									<a data-toggle="modal" data-target="#slaModal" class="blog-img">
+										<img class="img-responsive" src="images/SLA.jpeg">
+										<div class="overlay"></div>
+										<div class="link">
+											<span class="read">Read more</h2>
+										</div>
+									</a>
+									<div class="desc">
+										<span class="meta">SLA</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item" style="margin-top:5%;">
+							<div class="col-md-12">
+								<div class="article">
+									<a data-toggle="modal" data-target="#slsModal" class="blog-img">
+										<img class="img-responsive" src="images/sls.jpg" alt="html5 bootstrap by colorlib.com">
+										<div class="overlay"></div>
+										<div class="link">
+											<span class="read">Read more</h2>
+										</div>
+									</a>
+									<div class="desc">
+										<span class="meta">SLS</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item" style="margin-top:10%;">
+					    <div class="col-md-12">
+					      <div class="article">
+					        <a data-toggle="modal" data-target="#vcModal" class="blog-img">
+					          <img class="img-responsive" src="images/vc.jpg" alt="html5 bootstrap by colorlib.com">
+					          <div class="overlay"></div>
+					          <div class="link">
+					            <span class="read">Read more</h2>
+					          </div>
+					        </a>
+					        <div class="desc">
+					          <span class="meta">Vacuum Casting</span>
+					        </div>
+					      </div>
+					    </div>
+						</div>
+						<div class="item">
+							<div class="col-md-12">
+								<div class="article">
+									<a data-toggle="modal" data-target="#frpModal" class="blog-img">
+										<img class="img-responsive" src="images/frp.jpg" alt="html5 bootstrap by colorlib.com">
+										<div class="overlay"></div>
+										<div class="link">
+											<span class="read">Read more</h2>
+										</div>
+									</a>
+									<div class="desc">
+										<span class="meta">Fiber-Reinforced Plastics</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item" style="margin-top:5%;">
+							<div class="col-md-12">
+								<div class="article">
+									<a data-toggle="modal" data-target="#stModal" class="blog-img">
+										<img class="img-responsive" src="images/soft_tooling.jpg" alt="html5 bootstrap by colorlib.com">
+										<div class="overlay"></div>
+										<div class="link">
+											<span class="read">Read more</h2>
+										</div>
+									</a>
+									<div class="desc">
+										<span class="meta">Soft Tooling</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item" style="margin-top:10%;">
+							<div class="col-md-12">
+								<div class="article">
+									<a data-toggle="modal" data-target="#cncModal" class="blog-img">
+										<img class="img-responsive" src="images/cnc.jpg" alt="html5 bootstrap by colorlib.com">
+										<div class="overlay"></div>
+										<div class="link">
+											<span class="read">Read more</h2>
+										</div>
+									</a>
+									<div class="desc">
+										<span class="meta">CNC</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+
+					</div>
+					<div class="col-md-6 expertise_heading_div">
+						<h2 class="expertise_heading" style="color:#FAFAF6"><strong>Expertise</strong></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="colorlib-services" style="background:#FAFAF6!important;">
+			<div class="container" style="position:relative;">
+				<div class="row">
+					<div class="col-md-6 road_heading_div">
+						<h2 class="road_heading"><strong>Road</strong></h2>
+					</div>
+					<div class="col-md-6">
+
+					</div>
+				</div>
+				<div class="row" style="padding:5px;">
+					<div class="col-md-3" style="margin-top:-5%;">
+						<div class="services animate-box">
+							<div class="content">
+								<ul style="margin-top:7%">
+									<li>CAD file received from the client</li>
+									<li>Data Analysis/Feasibility Check</li>
+									<li>Process Selection</li>
+									<li>Material Selection</li>
+								</ul>
+							</div>
+							<div class="desc" style="display:flex;align-items:center;justify-content:center;">
+								<div class="meta">
+									<h3>Planning <i class="fa fa-pencil-square-o" aria-hidden="true" style="font-size:1.7em;"></i></h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3" style="margin-top:5%;">
+						<div class="services animate-box">
+							<div class="content">
+								<ul>
+									<li>Part Orientation</li>
+									<li>Machine Calibration</li>
+									<li>Build Preparation</li>
+									<li>Post Processing</li>
+								</ul>
+							</div>
+							<div class="desc">
+								<div class="meta">
+									<h3>Execution <i class="fa fa-cogs" aria-hidden="true" style="font-size:1.7em;"></i></h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr style="visibility:hidden;">
+					<div class="col-md-3" style="margin-top:-5%;">
+						<div class="services animate-box">
+							<div class="content">
+								<ul>
+									<li>Component Accuracy Testing</li>
+								</ul>
+							</div>
+							<div class="desc">
+								<div class="meta">
+									<h3>Quality Check <br> &nbsp; <i class="fa fa-check-square-o" aria-hidden="true" style="font-size:1.5em;"></i></h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3" style="margin-top:5%;">
+						<div class="services animate-box">
+							<div class="content">
+								<ul>
+									<li>Packaging & Delivery</li>
+									<li>Feedback</li>
+								</ul>
+							</div>
+							<div class="desc">
+								<div class="meta">
+									<h3>Dispatch <br><i class="fa fa-truck" aria-hidden="true" style="font-size:1.7em;"></i> </h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+
+					</div>
+					<div class="col-md-6 map_heading_div">
+						<h2 class="map_heading"><strong>Map</strong></h2>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="colorlib-applications" style="background-image:url('images/app.jpg')">
+			<div class="container applications_container">
+				<div class="row text-center">
+					<div class="col-md-12">
+						<h2 class="application_heading">Applications</h2>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="row text-center" class="applications_cubes">
+						<div class="col-md-1">
 
 					</div>
 						<div class="col-md-2">
@@ -368,166 +389,172 @@
 						<div class="col-md-1">
 
 						</div>
-					</div>
+						</div>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<span id="work"></span>
-	<div id="colorlib-services" style="padding:0!important">
-			<div class="container" style="position:relative;">
-				<div class='our'><strong>o</strong>ur</div>
-				<div class="row text-center" style="margin-top:11%;margin-bottom:5%;">
-					<div class="col-md-4">
-						<div class="article">
-							<a class="blog-img">
-								<img class="img-responsive" src="images/work/Transparent Optics- Vacuum Casting.jpeg" style="width:100%;">
-								<div class="overlay"></div>
-								<div class="link">
-									<span class="read">Transparent<br>Optics</span>
-								</div>
-							</a>
+		<span id="work"></span>
+		<div id="colorlib-services" class="work-section" style="padding:0!important">
+				<div class="container" style="position:relative;">
+					<div class='our'><strong>o</strong>ur</div>
+					<div class="row text-center" class="our_work_heading">
+						<div class="col-md-12">
+							<h2 class="our_work_heading_content">our work</h2>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="article">
-							<a class="blog-img">
-								<img class="img-responsive" src="images/work/SLS Miniature.jpeg" style="width:100%;">
-								<div class="overlay"></div>
-								<div class="link">
-									<span class="read">SLS Miniature</span>
-								</div>
-							</a>
+					<div class="row text-center" style="margin-top:11%;margin-bottom:5%;">
+						<div class="col-md-4">
+							<div class="article">
+								<a class="blog-img">
+									<img class="img-responsive" src="images/work/Transparent Optics- Vacuum Casting.jpeg" style="width:100%;">
+									<div class="overlay"></div>
+									<div class="link">
+										<span class="read">Transparent<br>Optics</span>
+									</div>
+								</a>
+							</div>
 						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="article">
-							<a class="blog-img">
-								<img class="img-responsive" src="images/work/Vacuum Casting.jpeg" style="width:100%;">
-								<div class="overlay"></div>
-								<div class="link">
-									<span class="read">Vacuum<br>Casting</span>
-								</div>
-							</a>
+						<div class="col-md-4">
+							<div class="article">
+								<a class="blog-img">
+									<img class="img-responsive" src="images/work/SLS Miniature.jpeg" style="width:100%;">
+									<div class="overlay"></div>
+									<div class="link">
+										<span class="read">SLS Miniature</span>
+									</div>
+								</a>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="work"><strong>w</strong>ork</div>
-				<a href="work.html">
-					<input type="button" class="btn see_more" value="See More">
-				</a>
-			</div>
-		</div>
-
-	<span id="about"></span>
-	<div id="colorlib-about-us">
-		<img src="images/logo_1.svg" class="background_image" alt="">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 padding-0" style="margin-top:1.7em;">
-						<h3 class="about_us">about us</h3>
-					</div>
-					<div class="col-md-9">
-						<p style="text-align:justify;font-size:16px;color:#012D20;">
-							A professional hub offering <strong>3D printing</strong> and <strong>prototyping</strong> solutions, Qatalyc stands for
-							evolution, innovation and speed. We provide fast and cost-effective products using state of
-							the art technology. Our objective is to adopt a detailed roadmap in providing top quality
-							parts in polymers. Founded in 2019, Qatalyc is fueled by the determination to advance the
-							current technological arena and simplify the complexities of 3D printing for maximum
-							people to integrate its benefits into their workflow. Our skilled team of professionals, with
-							an experience of over a decade in the industry, work relentlessly to achieve the objectives of
-							our clients.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	<div id="colorlib-content" style="background:#bfbfbf!important;padding:1.5em!important">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<h2 class="content_heading">Be the <strong>catalyst</strong><br> for change</h2>
-				</div>
-				<div class="col-md-6">
-					<div class="about_us_box">
-						<p>
-							<strong>Let's build ideas together! <br> Drop a message and we will get back to you at the earliest</strong>
-						</p>
-						<hr>
-						<p>
-							<form action="index.html" method="post">
-								<div class="form-group">
-									<label for="exampleInputEmail1">Email address</label>
-									<input type="email" class="form-control" id="email_input" aria-describedby="emailHelp" placeholder="Enter email">
-									<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-								</div>
-								<div class="form-group">
-									<label for="exampleInputEmail1">Phone Number</label>
-									<input type="tel" class="form-control" id="phone_input" aria-describedby="emailHelp" placeholder="Enter phone">
-									<small id="emailHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
-								</div>
-								<div class="form-group">
-									<label for="exampleFormControlTextarea1">Enter message</label>
-									<textarea class="form-control" id="query_input" rows="3"></textarea>
-								</div>
-								<button type="submit" class="btn btn-primary">Submit</button>
-							</form>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<footer>
-		<div id="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 col-pb-sm">
-						<div class="row">
-							<div class="col-md-10 justify-content-start">
-								<img src="images/logo_2_light.svg" width="140" height="140" style="margin-left:-30%; margin-top:20%;">
+						<div class="col-md-4">
+							<div class="article">
+								<a class="blog-img">
+									<img class="img-responsive" src="images/work/Vacuum Casting.jpeg" style="width:100%;">
+									<div class="overlay"></div>
+									<div class="link">
+										<span class="read">Vacuum<br>Casting</span>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-pb-sm" class="quick_links">
-						<h2>Quick Links</h2>
-						<ul>
-							<li><a href="#home">Home</a></li>
-							<li><a href="#solutions">Solutions</a></li>
-							<li><a href="#expertise">Expertise</a></li>
-							<li><a href="#work">Our Work</a></li>
-							<li><a href="#about">About Us</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3 col-pb-sm">
-						<h2>Contact</h2>
-						<p class="colorlib-social-icons">
-							<a href="#"><i class="icon-facebook"></i></a>
-							<a href="#"><i class="icon-instagram"></i></a>
-							<a href="#"><i class="icon-linkedin"></i></a>
-						</p>
-						<p>Phone - <a href="tel:9992878874" style="color:#FAFAF6">9992878874</a></p>
-						<p>Email - <a href="mailto:qatalyc@gmail.com" style="color:#FAFAF6">qatalyc@gmail.com</a></p>
-					</div>
-					<div class="col-md-3 col-pb-sm" style="color:#FAFAF6">
-						<h2>Address</h2>
-						<p>
-							543, Tower A, IT Tech Park, Sohna Road, Sector 49, Gurugram, Haryana- 122018
-						</p>
+					<div class="work"><strong>w</strong>ork</div>
+					<a href="work.html">
+						<input type="button" class="btn see_more" value="See More">
+					</a>
+				</div>
+			</div>
+
+		<span id="about"></span>
+		<div id="colorlib-about-us">
+			<img src="images/logo_1.svg" class="background_image" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 padding-0" style="margin-top:1.7em;">
+							<h3 class="about_us">about us</h3>
+						</div>
+						<div class="col-md-9">
+							<p style="text-align:justify;font-size:16px;color:#012D20;">
+								A professional hub offering <strong>3D printing</strong> and <strong>prototyping</strong> solutions, Qatalyc stands for
+								evolution, innovation and speed. We provide fast and cost-effective products using state of
+								the art technology. Our objective is to adopt a detailed roadmap in providing top quality
+								parts in polymers. Founded in 2019, Qatalyc is fueled by the determination to advance the
+								current technological arena and simplify the complexities of 3D printing for maximum
+								people to integrate its benefits into their workflow. Our skilled team of professionals, with
+								an experience of over a decade in the industry, work relentlessly to achieve the objectives of
+								our clients.
+							</p>
+						</div>
 					</div>
 				</div>
+			</div>
+
+		<div id="colorlib-content" style="background:#bfbfbf!important;padding:1.5em!important">
+			<div class="container">
 				<div class="row">
-					<div class="col-md-12 text-center">
-						<p style="color:#FAFAF6">
-							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Qatalyc</a>
-						</p>
+					<div class="col-md-6">
+						<h2 class="content_heading">Be the <strong>catalyst</strong><br> for change</h2>
+					</div>
+					<div class="col-md-6">
+						<div class="about_us_box">
+							<p>
+								<strong>Let's build ideas together! <br> Drop a message and we will get back to you at the earliest</strong>
+							</p>
+							<hr>
+							<p>
+								<form action="index.html" method="post">
+									<div class="form-group">
+										<label for="exampleInputEmail1">Email address</label>
+										<input type="email" class="form-control" id="email_input" aria-describedby="emailHelp" placeholder="Enter email">
+										<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+									</div>
+									<div class="form-group">
+										<label for="exampleInputEmail1">Phone Number</label>
+										<input type="tel" class="form-control" id="phone_input" aria-describedby="emailHelp" placeholder="Enter phone">
+										<small id="emailHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
+									</div>
+									<div class="form-group">
+										<label for="exampleFormControlTextarea1">Enter message</label>
+										<textarea class="form-control" id="query_input" rows="3"></textarea>
+									</div>
+									<button type="submit" class="btn btn-primary">Submit</button>
+								</form>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</footer>
+
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-pb-sm">
+							<div class="row">
+								<div class="col-md-10 justify-content-start">
+									<img  class="footer_logo" src="images/logo_2_light.svg" width="140" height="140" style="margin-left:-30%; margin-top:20%;">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-pb-sm" class="quick_links">
+							<h2>Quick Links</h2>
+							<ul>
+								<li><a href="#home">Home</a></li>
+								<li><a href="#solutions">Solutions</a></li>
+								<li><a href="#expertise">Expertise</a></li>
+								<li><a href="#work">Our Work</a></li>
+								<li><a href="#about">About Us</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3 col-pb-sm">
+							<h2>Contact</h2>
+							<p class="colorlib-social-icons">
+								<a href="#"><i class="icon-facebook"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-linkedin"></i></a>
+							</p>
+							<p>Phone - <a href="tel:9992878874" style="color:#FAFAF6">9992878874</a></p>
+							<p>Email - <a href="mailto:qatalyc@gmail.com" style="color:#FAFAF6">qatalyc@gmail.com</a></p>
+						</div>
+						<div class="col-md-3 col-pb-sm" style="color:#FAFAF6">
+							<h2>Address</h2>
+							<p>
+								543, Tower A, IT Tech Park, Sohna Road, Sector 49, Gurugram, Haryana- 122018
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<p style="color:#FAFAF6">
+								Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Qatalyc</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
 </div>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>

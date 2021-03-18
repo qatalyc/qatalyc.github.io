@@ -221,10 +221,10 @@ h1, h2, h3, h4, h5, h6 {
 .solutions_heading:after {
   position: absolute;
   top: 12px;
-  right: -47%;
+  right: -52%;
   content: '';
   background: #FAFAF6;
-  width: 48%;
+  width: 52%;
   height: 2px;
 }
 .solutions_heading:before {
@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 105%;
   content: '';
   background: #FAFAF6;
-  width: 20%;
+  width: 30%;
   height: 2px;
 }
 
@@ -268,15 +268,15 @@ h1, h2, h3, h4, h5, h6 {
   width: 124%;
   height: 2px;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 812px) {
   .expertise_heading {
-    top:70%;
+    top:0%;
     right: 0;
     transform: rotate(0deg);
   }
   .road_heading {
     position: relative;
-    top: -10px;
+    top: -5%;
     left:0;
     transform: rotate(0deg);
   }
@@ -586,7 +586,7 @@ header {
   height: 40%;
 }
 #colorlib-about{
-  background-color: #012D20;
+  background-color: #042d22;
   height: 100%;
 }
 
@@ -607,15 +607,15 @@ header {
   background-image: url("images/bg.jpg") !important;
 
   /* Full height */
-  height: 70%;
+  height: 80%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 0 !important;
-  padding-bottom: 4em !important;
+  padding-top: 1.5em !important;
+  padding-bottom: 5em !important;
 }
 #colorlib-intro .container .row{
   border-color: black;
@@ -673,7 +673,7 @@ header {
   position: absolute;
   height: 400px;
   width: 400px;
-  opacity: 0.5;
+  opacity: 0.3;
   right:-2%;
   top:15%;
 }
@@ -782,6 +782,7 @@ header {
   font-family: 'Brygada 1918', serif;
   text-align: right;
   font-size: 90px;
+  margin-right: 6%;
   line-height: 60%;
   color: #012D20;
   font-weight: 700; }
@@ -894,14 +895,45 @@ header {
   border-color: #FAFAF6 !important;
   color: #fff
 }
+.our_work_heading_content{
+  color:#FAFAF6;
+  font-family: 'Brygada 1918', serif;
+  font-size: 100px;
+  margin-bottom: -13%;
+  display: none;
+}
+
 @media screen and (max-width:768px){
+  .our{
+    display: none;
+  }
+  .work{
+    display:none;
+  }
+  .our_work_heading_content{
+    display: block;
+  }
   .see_more{
     position: relative;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: -110%;
+    margin-left: 45%;
+    margin-right: 25%;
+    margin-top: -10%;
+  }
+  #colorlib-services .container{
+    margin: 0 auto !important;
+    margin-left: -4% !important;
   }
 }
+
+.work-section{
+  margin-left: 0 !important;
+}
+@media screen and (orientation:landscape){
+.work-section{
+  margin-left: -10% !important;
+}
+}
+
 .map {
   font-family: 'Brygada 1918', serif;
   position:absolute;
@@ -1244,6 +1276,15 @@ header {
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     font-weight: 700; }
+
+@media screen and (max-width:768px){
+  .applications_content {
+    padding: 5%;
+  }
+  .navbar{
+    display: none;
+  }
+}
 
 .work-entry {
   display: block;
@@ -1889,6 +1930,11 @@ input[type="text"] {
       -webkit-box-shadow: none;
       box-shadow: none;
       border: 2px solid rgba(202, 130, 248, 0.8); }
+
+  @media screen and (max-width:768px){
+  .footer_logo{
+    margin:0 auto !important;
+  }
   .btn-custom {
     width: 100%;
     padding: 10px 0;
