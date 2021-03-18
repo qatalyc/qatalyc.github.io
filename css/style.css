@@ -213,7 +213,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #bfbfbf;
   font-weight: lighter;
   font-size: 26px;
-  right:-29.5%;
+  right:-40%;
   top: -32%;
   z-index: 999;
   transform: rotate(-90deg);
@@ -221,10 +221,10 @@ h1, h2, h3, h4, h5, h6 {
 .solutions_heading:after {
   position: absolute;
   top: 12px;
-  right: -52%;
+  right: -54%;
   content: '';
   background: #FAFAF6;
-  width: 52%;
+  width: 54%;
   height: 2px;
 }
 .solutions_heading:before {
@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 105%;
   content: '';
   background: #FAFAF6;
-  width: 30%;
+  width: 47%;
   height: 2px;
 }
 
@@ -607,15 +607,15 @@ header {
   background-image: url("images/bg.jpg") !important;
 
   /* Full height */
-  height: 80%;
+  height: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 1.5em !important;
-  padding-bottom: 5em !important;
+  padding-top: 2% !important;
+  padding-bottom: 5% !important;
 }
 #colorlib-intro .container .row{
   border-color: black;
